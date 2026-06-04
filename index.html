@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MealsOnWheels | Food Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/tmp/workspace/ParadisePiyush/MealsOnWheels/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <h1 class="logo">MealsOnWheels</h1>
+        <nav class="nav-links">
+          <a href="#menu">Menu</a>
+          <a href="#features">Features</a>
+          <a href="#cart">Cart</a>
+          <a href="#track">Track Order</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="container hero-content">
+          <div>
+            <p class="tag">Fast • Fresh • Affordable</p>
+            <h2>Delicious food delivered to your doorstep</h2>
+            <p>
+              Browse meals, add to cart, checkout instantly, and track your order
+              live.
+            </p>
+            <a href="#menu" class="btn primary">Order Now</a>
+          </div>
+          <div class="hero-card">
+            <h3>Today's Offer</h3>
+            <p><strong>20% OFF</strong> on orders above ₹799</p>
+            <p class="small">Use code: <strong>MEALS20</strong></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="menu" class="section">
+        <div class="container">
+          <div class="section-head">
+            <h2>Food Items</h2>
+            <div class="filters">
+              <input id="search" type="text" placeholder="Search food..." />
+              <select id="categoryFilter">
+                <option value="all">All Categories</option>
+                <option value="pizza">Pizza</option>
+                <option value="burger">Burger</option>
+                <option value="indian">Indian</option>
+                <option value="dessert">Dessert</option>
+                <option value="drink">Drink</option>
+              </select>
+            </div>
+          </div>
+          <div id="menuGrid" class="menu-grid"></div>
+        </div>
+      </section>
+
+      <section id="features" class="section alt">
+        <div class="container feature-grid">
+          <article>
+            <h3>Live Tracking</h3>
+            <p>Follow every order stage from kitchen to your doorstep.</p>
+          </article>
+          <article>
+            <h3>Quick Checkout</h3>
+            <p>Place your order in seconds with auto-billing summary.</p>
+          </article>
+          <article>
+            <h3>Top Rated Meals</h3>
+            <p>Choose from best-selling dishes rated by real customers.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="cart" class="section">
+        <div class="container cart-layout">
+          <div>
+            <h2>Your Cart</h2>
+            <div id="cartItems" class="cart-items"></div>
+            <p id="emptyCart" class="muted">Your cart is empty.</p>
+          </div>
+          <aside class="bill-box">
+            <h3>Bill Summary</h3>
+            <div class="line"><span>Subtotal</span><span id="subtotal">₹0</span></div>
+            <div class="line"><span>Delivery Fee</span><span id="delivery">₹0</span></div>
+            <div class="line"><span>Tax (5%)</span><span id="tax">₹0</span></div>
+            <div class="line total"><span>Total</span><span id="total">₹0</span></div>
+            <button id="checkoutBtn" class="btn primary full">Place Order</button>
+            <p class="small muted">Estimated delivery: <span id="eta">--</span></p>
+          </aside>
+        </div>
+      </section>
+
+      <section id="track" class="section alt">
+        <div class="container">
+          <h2>Track Your Order</h2>
+          <p id="orderStatus" class="status">No active order.</p>
+          <div class="tracker">
+            <div id="trackerFill" class="tracker-fill"></div>
+          </div>
+          <div class="stages">
+            <span>Placed</span>
+            <span>Preparing</span>
+            <span>Out for Delivery</span>
+            <span>Delivered</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-wrap">
+        <p>© 2026 MealsOnWheels. All rights reserved.</p>
+        <p>Support: support@mealsonwheels.com</p>
+      </div>
+    </footer>
+
+    <script src="/tmp/workspace/ParadisePiyush/MealsOnWheels/script.js"></script>
+  </body>
+</html>
