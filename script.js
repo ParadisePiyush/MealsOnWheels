@@ -123,20 +123,20 @@ function startTracking() {
     { text: 'Order delivered. Enjoy your meal!', progress: 100 }
   ];
 
-  let i = 0;
-  orderStatusEl.textContent = stages[i].text;
-  trackerFill.style.width = `${stages[i].progress}%`;
+  let stageIndex = 0;
+  orderStatusEl.textContent = stages[stageIndex].text;
+  trackerFill.style.width = `${stages[stageIndex].progress}%`;
 
   const interval = setInterval(() => {
-    i += 1;
-    if (i >= stages.length) {
+    stageIndex += 1;
+    if (stageIndex >= stages.length) {
       clearInterval(interval);
       cart.clear();
       renderCart();
       return;
     }
-    orderStatusEl.textContent = stages[i].text;
-    trackerFill.style.width = `${stages[i].progress}%`;
+    orderStatusEl.textContent = stages[stageIndex].text;
+    trackerFill.style.width = `${stages[stageIndex].progress}%`;
   }, 2500);
 }
 
